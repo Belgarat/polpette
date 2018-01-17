@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "polpettedb"
+  },
+  "AccessToken": {
+    "dataSource": "polpettedb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "polpettedb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "polpettedb",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "polpettedb",
+    "public": false
+  },
+  "squadra": {
+    "dataSource": "polpettedb",
+    "public": true
+  },
+  "campionato": {
+    "dataSource": "polpettedb",
+    "public": true
+  },
+  "punteggio": {
+    "dataSource": "polpettedb",
+    "public": true
+  }
+}

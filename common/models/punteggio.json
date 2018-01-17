@@ -1,0 +1,35 @@
+{
+  "name": "punteggio",
+  "plural": "punteggi",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "punteggio": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "campionato": {
+      "type": "belongsTo",
+      "model": "campionato",
+      "foreignKey": ""
+    },
+    "squadra": {
+      "type": "belongsTo",
+      "model": "squadra",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

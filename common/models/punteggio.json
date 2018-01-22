@@ -9,8 +9,7 @@
   "properties": {
     "id": {
       "type": "number",
-      "id": true,
-      "generated": true
+      "id": true
     },
     "punteggio": {
       "type": "string",

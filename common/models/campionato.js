@@ -32,4 +32,33 @@ module.exports = function(Campionato) {
           returns: {root: true, type: 'object'}
         }
     );
+
+    /**
+    * Set creation date after every creation
+    *
+    */
+    Campionato.afterRemote('create', function(ctx, instance, next){
+        if(ctx.result){
+            var creation_date = new Date();
+            instance.updateAttributes({created: creation_date}, function (err, instance){
+                if (err) next(err);
+            });
+        }
+        next();
+    });
+
+    // 
+    /**
+    * Set last update date after every update
+    */
+    Campionato.observe("after save" , function(ctx, next) {
+        if(!ctx.isNewInstance && ctx.instance){
+            var save_date = new Date();
+            ctx.instance.updateAttributes({updated: save_date}, function (err, instance){
+                if (err) next(err);
+            });
+        }
+        next();
+    });
+
 };

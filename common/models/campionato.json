@@ -19,6 +19,12 @@
     "current": {
       "type": "number",
       "default": 0
+    },
+    "created": {
+      "type": "date"
+    },
+    "updated": {
+      "type": "date"
     }
   },
   "validations": [],

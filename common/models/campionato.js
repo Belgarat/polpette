@@ -34,11 +34,19 @@ module.exports = function(Campionato) {
     );
 
     /**
-    * Set creation date after every creation
+    * Set creation date after every creation and set current campionato
     *
     */
     Campionato.afterRemote('create', function(ctx, instance, next){
         if(ctx.result){
+            //console.log(Campionato);
+            //set current
+            /*Campionato.setCurrent(instance.id,function(next){
+                ({
+                });
+            });*/
+
+            //set creation date
             var creation_date = new Date();
             instance.updateAttributes({created: creation_date}, function (err, instance){
                 if (err) next(err);

@@ -21,12 +21,12 @@
     "campionato": {
       "type": "belongsTo",
       "model": "campionato",
-      "foreignKey": ""
+      "foreignKey": "campionatoId"
     },
     "squadra": {
       "type": "belongsTo",
       "model": "squadra",
-      "foreignKey": ""
+      "foreignKey": "squadraId"
     }
   },
   "acls": [],

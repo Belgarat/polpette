@@ -12,7 +12,7 @@
       "id": true
     },
     "punteggio": {
-      "type": "string",
+      "type": "number",
       "required": true
     }
   },

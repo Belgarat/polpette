@@ -20,11 +20,13 @@
   "relations": {
     "punteggio": {
       "type": "hasOne",
-      "model": "punteggio"
+      "model": "punteggio",
+      "foreignKey": "id"
     },
     "campionato": {
       "type": "belongsTo",
-      "model": "campionato"
+      "model": "campionato",
+      "foreignKey": "id"
     }
   },
   "acls": [],

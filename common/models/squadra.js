@@ -14,7 +14,6 @@ module.exports = function(Squadra) {
                     if (err) next(err);
                 });
             }
-            else 
         });
         // ...then delete squadra
         next();

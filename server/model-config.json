@@ -46,5 +46,9 @@
   "punteggio": {
     "dataSource": "polpettedb",
     "public": true
+  },
+  "gallery": {
+    "dataSource": "storage-polpettedb",
+    "public": true
   }
 }

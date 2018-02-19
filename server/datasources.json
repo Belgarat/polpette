@@ -4,13 +4,23 @@
     "connector": "memory"
   },
   "polpettedb": {
-    "host": "",
+    "host": "localhost",
     "port": 0,
     "url": "",
-    "database": "",
+    "database": "polpettedb",
     "password": "",
     "name": "polpettedb",
     "user": "",
     "connector": "mongodb"
+  },
+  "storage-polpettedb": {
+    "host": "localhost",
+    "port": 0,
+    "url": "",
+    "database": "polpettedb",
+    "password": "",
+    "name": "polpettedb",
+    "user": "",
+    "connector": "loopback-component-storage-mongo"
   }
 }

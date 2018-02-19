@@ -1,0 +1,10 @@
+{
+  "name": "gallery",
+  "plural": "gallery",
+  "base": "Model",
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

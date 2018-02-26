@@ -12,7 +12,7 @@ module.exports = function(Punteggio) {
             Punteggio.destroyById(instance.id,next);
         });
         // ...then delete squadra
-        next();
+        //next();
     };
     Punteggio.remoteMethod (
         'deleteByIdSquadra', 

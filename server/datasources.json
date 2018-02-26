@@ -13,14 +13,10 @@
     "user": "",
     "connector": "mongodb"
   },
-  "storage-polpettedb": {
-    "host": "localhost",
-    "port": 0,
-    "url": "",
-    "database": "polpettedb",
-    "password": "",
-    "name": "polpettedb",
-    "user": "",
-    "connector": "loopback-component-storage-mongo"
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./server/storage"
   }
 }

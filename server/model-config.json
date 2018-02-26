@@ -48,7 +48,7 @@
     "public": true
   },
   "gallery": {
-    "dataSource": "storage-polpettedb",
+    "dataSource": "storage",
     "public": true
   }
 }

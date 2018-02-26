@@ -19,7 +19,7 @@ module.exports = function(Punteggio) {
         'deleteByIdSquadra', 
         {
           description: "delete punteggio from id squadra",
-          http: {path: '/:idSquadra/delete-punteggio-by-id-suadra', verb: 'delete'},
+          http: {path: '/:idSquadra/delete-punteggio-by-id-squadra', verb: 'delete'},
           accepts: {arg: 'idSquadra', type: 'string', http: { source: 'path' } },
           returns: {root: true, type: 'object'}
         }

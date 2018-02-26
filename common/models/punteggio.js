@@ -5,13 +5,14 @@ module.exports = function(Punteggio) {
     * Set last update date after every update
     */
     Punteggio.deleteByIdSquadra = function(idSquadra, next) {
-        console.log(idSquadra);
-        Punteggio.find( {where: {squadraId: idSquadra}}, function (err, instance) {
-            console.log(instance);
+        //console.log(idSquadra);
+        Punteggio.destroyAll( {where: {squadraId: idSquadra}},next); //{
+        //Punteggio.find( {where: {squadraId: idSquadra}}, function (err, instance) {
+            //console.log(instance);
             //delete punteggio
             //instance.destroy(function(err){
-            Punteggio.destroyById(instance.id,next);
-        });
+            //Punteggio.destroyById(instance.id,next);
+        //}
         // ...then delete squadra
         //next();
     };

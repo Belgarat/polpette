@@ -6,7 +6,7 @@ module.exports = function(Punteggio) {
     */
     Punteggio.deleteByIdSquadra = function(idSquadra, next) {
         //console.log(idSquadra);
-        Punteggio.destroyAll( {where: {squadraId: idSquadra}},next); //{
+        Punteggio.destroyAll( {squadraId: idSquadra},next); //{
         //Punteggio.find( {where: {squadraId: idSquadra}}, function (err, instance) {
             //console.log(instance);
             //delete punteggio

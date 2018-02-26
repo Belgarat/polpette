@@ -8,7 +8,7 @@ module.exports = function(Punteggio) {
         Punteggio.find( {where: {squadraId: idSquadra}}, function (err, instance) {
             //console.log(instance);
             //delete punteggio
-            instance.punteggio.destroy(function(err){
+            instance.destroy(function(err){
                 console.log(err);
             });
         });

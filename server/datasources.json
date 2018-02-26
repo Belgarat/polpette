@@ -12,11 +12,5 @@
     "name": "polpettedb",
     "user": "",
     "connector": "mongodb"
-  },
-  "storage": {
-    "name": "storage",
-    "connector": "loopback-component-storage",
-    "provider": "filesystem",
-    "root": "./server/storage"
   }
 }
